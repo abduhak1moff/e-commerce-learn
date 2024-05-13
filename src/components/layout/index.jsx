@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <Fragment>
       <Header />
-      <main>
+      <main className="min-vh-100">
         <Outlet />
       </main>
       <Footer />

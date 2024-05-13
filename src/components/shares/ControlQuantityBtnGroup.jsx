@@ -7,12 +7,15 @@ const ControlQuantityBtnGroup = ({ id, quantity }) => {
   const { increaseQuantity, decreaseQuantity } = useContext(ProductContext);
 
   return (
-    <div className="btn-group">
-      <button className="btn btn-danger" onClick={() => decreaseQuantity(id)}>
+    <div className="btn-group bg-secondary  border">
+      <button
+        className="btn text-white fs-black  "
+        onClick={() => decreaseQuantity(id)}
+      >
         -
       </button>
-      <span className="btn btn-primary">{quantity}</span>
-      <button className="btn btn-success" onClick={() => increaseQuantity(id)}>
+      <span className="btn  text-white">{quantity}</span>
+      <button className="btn text-white" onClick={() => increaseQuantity(id)}>
         +
       </button>
     </div>

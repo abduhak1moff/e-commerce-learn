@@ -4,9 +4,9 @@ import { LanguageContext } from "../../context/LanguageContext";
 const Footer = () => {
   const { lang } = useContext(LanguageContext);
   return (
-    <footer>
+    <footer className="alert alert-info  m-0">
       <div className="container">
-        <h3 className="text-center">{lang.founderIs} Azizbek Programmer</h3>
+        <h3 className="text-center ">{lang.founderIs} Azizbek Programmer</h3>
       </div>
     </footer>
   );

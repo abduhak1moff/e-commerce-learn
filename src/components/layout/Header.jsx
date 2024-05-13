@@ -8,30 +8,30 @@ const Header = () => {
   const { cart } = useContext(ProductContext);
 
   return (
-    <header className="fixed-top bg-black text-white">
+    <header className="fixed-top alert alert-info  text-white">
       <nav className="container d-flex align-items-center justify-content-between">
-        <NavLink className="nav-link" to="/">
-          Logo
+        <NavLink className="nav-link " to="/">
+          <h1>E-Shop</h1>
         </NavLink>
         <ul className="nav align-items-center">
           <li className="nav-item">
-            <NavLink className="nav-link" to="/">
+            <NavLink className=" text-primary  nav-link" to="/">
               {lang.home}
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/counter">
+            <NavLink className=" text-primary  nav-link" to="/counter">
               {lang.counter}
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/cart">
+            <NavLink className=" text-primary  nav-link" to="/cart">
               {lang.cart}{" "}
-              <span className="badge bg-warning">{cart.length}</span>
+              <span className="badge bg-primary">{cart.length}</span>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/favourite">
+            <NavLink className=" text-primary  nav-link" to="/favourite">
               {lang.favourite}
             </NavLink>
           </li>

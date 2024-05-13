@@ -35,7 +35,8 @@ const ProductCard = ({
           </h5>
         </Link>
         <p>
-          <span className="badge bg-danger">{discount} %</span> {price}$
+          <span className="badge bg-danger">{discount} %</span>{" "}
+          <p className="badge bg-warning">{price}$</p>
         </p>
         <p className="card-text">{description}</p>
         {productInCart ? (

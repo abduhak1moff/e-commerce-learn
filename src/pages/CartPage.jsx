@@ -12,9 +12,9 @@ const CartPage = () => {
           {cart.map((pr) => (
             <CartCard key={pr.id} {...pr} />
           ))}
-          <button className="btn btn-warning">
-            Checkout {totalPriceOfCart} $
-          </button>
+          <div className="alert alert-primary ">
+            <h3 className="text-center">Checkout {totalPriceOfCart} $</h3>
+          </div>
         </div>
       </section>
     </Fragment>
